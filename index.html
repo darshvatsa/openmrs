@@ -1,0 +1,334 @@
+<html>
+   <head>
+   	<title>OpenMRS</title>
+   	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+   	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   	<style>
+   		@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+   		body{
+   			margin:0;
+   		}
+   		@font-face {
+            font-family: bold1;
+            src: url(fonts/1_bold.otf);
+        }
+   		.header{
+   			padding-top: 4vh;
+   			padding-bottom: 2.3vh;
+   			position: absolute;
+   		}
+   		.head_left{
+   			width: 13%;
+   			padding-left: 12vh;
+   			float:left;
+   		}
+   		.logo{
+   			width: 100%;
+   		}
+   		.head_right{
+   			float:right;
+   			margin-right: 12vh;
+   		}
+   		.b1{
+   			margin-top: 2.4vh;
+   			margin-left: 4vh;
+   			background:none;
+   			border:none;
+   			font-family: bold1;
+   			transition: 0.2s;
+   			outline:none;
+   		}
+   		.b1:hover{
+   			color:#3932a2;
+   			cursor: pointer;
+   		}
+   		.head_2{
+   			width: 90%;
+   			height:110%;
+   			padding-top: 21vh;
+   			margin-bottom: 16vh;
+   		}
+   		.image_sc{
+   			width:100%;
+   			height:90%;
+   			background-color: #000000;
+   			animation: scroll infinite;
+   			animation-duration: 30s;
+   			background-size: cover;
+   			background-repeat: no-repeat;
+   			animation-timing-function: step-end;
+   		}
+        @keyframes scroll{
+        	0%{background-image: url(images/slide1.png);}
+        	20%{background-image: url(images/slide2.png);}
+        	40%{background-image: url(images/slide3.png);}
+        }
+        .next{
+        	background-color: #e0e6fb;
+        	width:100%;
+        	height: 75%;
+        	padding-top: 5vh;
+        	padding-bottom: 5vh;
+        }
+        .collect{
+        	font-family: bold1;
+        	width:58%; 
+        	margin-left: 8vh;
+        	float: left;
+        }
+        .collect_1{
+        	float: left;
+        	height: 93%;
+        	background-color: #ffffff;
+        	width:26%;
+        	margin-left: 7vh;
+        	padding-top:4vh;
+        	padding-left: 4vh;
+        	padding-right: 4vh;
+        }
+        .collect_text{
+        	width:94%;
+        	font-family: 'bold1';
+        }
+        .left{
+        	font-family: 'Montserrat', sans-serif;
+        }
+        .images_1{
+        	background-color: #000000;
+        	width: 30%;
+        	height: 24vh;
+        	margin-top: 4vh;
+        	background-size: cover;
+        	background-repeat: no-repeat;
+        	box-shadow: 0 0 black;
+        	transition: 0.3s;
+        }
+        .images_1:hover{
+        	box-shadow: 6px 5px 11px black;
+        	cursor: pointer;
+        }
+        .img_here{
+        	float:left;
+        	background-image: url(images/004.jpeg);
+        }
+        .img_here2{
+        	margin-left: 15vh;
+        	background-image: url(images/005.png);
+        	float:left;
+        }
+        a{
+        	color:#171ddc;
+        }
+        a:focus{
+        	color:#ff0000;
+        }
+        a:hover{
+        	color:#ff0000;
+        }
+        .part2{
+        	padding-top: 8vh;
+        	height: 80%;
+        	padding-bottom: 8vh;
+        }
+        .new{
+        	background-color: #131313;
+        }
+        .here{
+        	color:#ffffff;
+        }
+        .input{
+        	font-family: bold1;
+        	padding: 1vh;
+        	outline: none;
+        	margin-top: 2vh;
+        	width: 60%;
+        }
+        .input1{
+        	width: 20%;
+        	margin-top: 3vh;
+        }
+        .fa{
+        	color:#ffffff;
+        	font-size: 4vh;
+        	margin-top: 4vh;
+        }
+        .fa-facebook:hover{
+        	color: #1350ff;
+        }
+        .fa-twitter:hover{
+        	color: #2ba2ff;
+        }
+        .fa-youtube:hover{
+        	color: #ff3c3c;
+        }
+        .fa-twitter{
+        	margin-left: 3vh;
+        }
+        .fa-youtube{
+        	margin-left: 3vh;
+        }
+        .right_text{
+        	padding-left: 8vh;
+        	float: left;
+        	width: 55%;
+        }
+        .text_2{
+        	font-family: 'Montserrat', sans-serif;
+        	margin-top: -2vh;
+        }
+        .quote{
+        	font-size:3vh;
+            font-weight: bold;
+        }
+        .more{
+        	color: #000000;
+        	font-weight: bold;
+        }
+        .pro{
+        	background: #000000;
+        	color:#ffffff;
+        }
+        .smile{
+        	color:#d40303;
+        }
+        .menu_nav{
+        	width: 100%;
+        	background-color: #171717;
+        	padding-top:1vh;
+        	padding-bottom: 3vh;
+        }
+        .nav{
+        	color:#bdbdbd;
+        	padding-top:1.5vh;
+        	padding-bottom: 1.5vh;
+        	transition: 0.3s;
+        }
+        .nav:hover{
+        	color:#000000;
+        	background-color: #ffffff;
+        }
+        .current{
+        	color:#ffffff;
+        }
+        .new_bu{
+        	color:#ffffff;
+        }
+        .a2{
+        	color:#00c4ff;
+        }
+        .a2:hover{
+        	color: #ff9900;
+        }
+        .blog_date{
+        	margin-top: -2vh;
+        }
+        .final{
+        	padding-top: 3vh;
+        	padding-bottom: 3vh;
+        	background-color: #0a0a0a;
+        	width:100%;
+        }
+        .foot_text1{
+        	color:#ffffff;
+        }
+        .foot_text2{
+        	color:#c3c3c3;
+        	width: 60%;
+        }
+        .foot_link{
+        	color:#00ff7e;
+        	text-decoration: none;
+        }
+        .foot_link:hover{
+        	color:#00f3ff;
+        }
+        .active_b{
+        	color: #009485;
+        }
+   	</style>
+   </head>
+   <body>
+   	<div class="header"><div class="head_left"><img src="images/logo.png" class="logo"></div>
+      <div class="head_right"><a href="#"><button class="b1 active_b"></a>Home</button><a href="https://openmrs.org/about/" target="_blank"><button class="b1">About</button></a><button class="b1">Get Involved</button><button class="b1">Tools</button><a href="https://openmrs.org/demo/" target="_blank"><button class="b1">Demo</button></a><a href="https://openmrs.org/download/" target="_blank"><button class="b1">Download</button></a><a href="https://openmrs.org/about/contact/" target="_blank"><button class="b1">Contact</button></a><a href="https://openmrs.org/join-the-community/donate/" target="_blank"><button class="b1">Donate</button></a></div></div>
+      <center><div class="head_2"><div class="menu_nav"><a href="#"><button class="b1 nav current">OpenMRS.org</button></a><a href="https://id.openmrs.org"><button class="b1 nav">ID</button></a><a href="https://addons.openmrs.org"><button class="b1 nav">Addons</button></a><a href="https://wiki.openmrs.org"><button class="b1 nav">Wiki</button></a><a href="https://atlas.openmrs.org"><button class="b1 nav">Atlas</button></a><a href="https://talk.openmrs.org/c/ask"><button class="b1 nav">Ask OpenMRS</button></a><a href="https://talk.openmrs.org"><button class="b1 nav">Talk</button></a><a href="https://wiki.openmrs.org/display/IRC/Home"><button class="b1 nav">Chat</button></a>
+
+<a href="https://issues.openmrs.org"><button class="b1 nav">Issues</button></a>
+<a href="https://www.github.com/OpenMRS"><button class="b1 nav">Code</button></a>
+<a href="https://ci.openmrs.org"><button class="b1 nav">CI</button></a>
+      </div><br><div class="image_sc"></div></div></center>
+      <div class="next"><div class="collect"><h2>The global OpenMRS community works together to build the world's leading open source enterprise electronic medical record system platform.</h2><br><div class="left">We’ve come together to specifically respond to those actively building and managing health systems in the developing world, where AIDS, tuberculosis, and malaria afflict the lives of millions of people.</div><br><div class="left"><a href="https://openmrs.org/about/mission/"><b>Our mission</b></a> is to improve health care delivery in resource-constrained environments by coordinating a global community to create and support this software. <a href="https://openmrs.org/about/mission/"><b>Read more.</b></a><br><br>
+       <div class="imagery"><a href="https://openmrs.org/help/"><div class="images_1 img_here"></div></a><a href="http://atlas.openmrs.org/"><div class="images_1 img_here2"></div></a></div>
+      </div>
+      <div class="img"></div></div><div class="collect_1"><iframe width="350" height="195" src="https://www.youtube.com/embed/9bwQPS1dFvE" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><h2 class="collect_text">OpenMRS: We’re bringing “open” to healthcare.</h2><h5 class="collect_text">OpenMRS is a global leader in open technologies and open standards in health care. It isn’t just open software—we strive to be open and transparent in everything we do, and encourage our collaborators to do the same. Learn how groups around the world have discovered the power of open architecture in health care IT.</h5></div></div>
+
+
+      <div class="part2">
+      	<div class="collect_1 new"><h3 class="collect_text here">Sign Up for updates</h3><br>
+           <form class="sign_up">
+           	   <input type="text" placeholder="Full Name" class="input" required>
+           	   <input type="text" placeholder="Email" class="input" required><br>
+           	   <input type="submit" class="input input1">
+           </form><br>
+           <hr width="90%" color="#ffffff" align="left">
+           <h3 class="collect_text here">Connect to our community</h3>
+           <h5 class="collect_text here">Follow us around the web to stay up-to-date with the OpenMRS community:</h5>
+               <div class="icon-bar">
+                    <a href="https://facebook.com/OpenMRS" class="facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="https://twitter.com/OpenMRS" class="twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.youtube.com/user/OpenMRS" class="youtube" target="_blank"><i class="fa fa-youtube"></i></a>
+      	       </div>
+      </div><div class="right_text"><h2 class="collect_text">Who are we?</h2><h5 class="collect_text text_2">The OpenMRS community is a worldwide network of volunteers from many different backgrounds including technology, health care, and international development. Together, we're working to build the world's largest and most flexible technology platform to support delivery of health care in some of the most challenging environments on the planet. No matter what your background or interest, we'd love to have you help us save lives with Health IT. <a href="https://openmrs.org/help/">Join us.</a></h5>
+
+      	<h2 class="collect_text">Where are we?</h2><h5 class="collect_text text_2">Although we started out to fix a database system in a single clinic in Kenya, in the last few years OpenMRS has grown dramatically to be used both in research and clinical settings in every corner of the planet. We're very proud of the innovators using OpenMRS to improve health care worldwide. <a href="http://atlas.openmrs.org/">Take a look where OpenMRS is being used.</a></h5>
+
+      	<h2 class="collect_text">Demo our software</h2><h5 class="collect_text text_2">Demo OpenMRS 2 and see the software from an implementers point of view. As a fully working installation, the demo allows you to get a better feel for what it's like to use the software. Log in to experience all of OpenMRS 2's many features. <a href="http://atlas.openmrs.org/">Demo now</a></h5>
+
+      	<h2 class="collect_text">Download OpenMRS</h2><h5 class="collect_text text_2">Download our latest software offering. Choose between our Reference Application (includes a starter EMR) or our Platform (and build your own EMR), depending on your needs and experience. There are also a number of add-on modules to help OpenMRS work better for you. <a href="https://openmrs.org/download/">Download now</a></h5></div></div>
+
+
+
+
+      	<div class="next"><div class="collect"><h2>Testimonials</h2><div class="left more"><b><font size="5vh">&quot;</font></b>Our rapidly evolving program in Western Kenya is committed to fully integrated and comprehensive health care services extending from villages to hospitals. Every part of our work utilizes a single shared infrastructure — <b><i>OpenMRS</i></b>.<br> It has become an indispensable backbone of every aspect of our future.<b><font size="5vh">&quot;</font></b><br> <p align="right" class="quote pro_new"><span class="pro">— Joe Mamlin, MD, Field Director, AMPATH</span></p></div><br><br><div class="left more"><b><font size="5vh">&quot;</font></b>The OpenMRS community is really diverse — academics, software developers, and health care workers. Our interest in working together to save lives is what binds us together. <font size="5vh">&quot;</font></b><br> <p align="right" class="quote pro_new"><span class="pro">— Suranga Nath Kasthurirathne, Developer, Jembi Health Systems</span></p>
+      </div>
+      <div class="img"></div></div><div class="collect_1"><h3 class="collect_text">OpenMRS on Twitter</h2><h5 class="collect_text"><a href="https://twitter.com/OpenMRS/status/1214284552363028480?s=20">OpenMRS Technical Project Manager</a><br>2:06 AM · Jan 7, 2020</h5><h5 class="collect_text"><a href="https://twitter.com/OpenMRS/status/1202884312523247617?s=20">The #OMRS19 Airport transfers are available on 6th Dec and 7th Dec.</a><br>3:05 PM · Dec 6, 2019</h5><iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-follow-button twitter-follow-button-rendered" style="position: static; visibility: visible; width: 220px; height: 20px;" title="Twitter Follow Button" src="https://platform.twitter.com/widgets/follow_button.4f8aea4342a4ada72cba2bdffcff6b4d.en.html#dnt=false&amp;id=twitter-widget-0&amp;lang=en&amp;screen_name=OpenMRS&amp;show_count=true&amp;show_screen_name=true&amp;size=m&amp;time=1579751840564" data-screen-name="OpenMRS"></iframe><br><br><hr width="90%" color="#000000" align="left"><h3 class="collect_text">Support OpenMRS</h3><h4 class="collect_text">When you shop at <span class="smile">smile.amazon.com</span> Amazon donates.</h4><a href="https://smile.amazon.com/ch/45-5316647"><h5 class="collect_text">Go to smile.amazon.com</h5></a></div></div>
+      
+      
+
+
+
+
+
+      <div class="part2">
+      	<div class="collect_1 new"><h3 class="collect_text here">Other OpenMRS Sites</h3>
+         <h5 class="collect_text new_bu"><a href="http://wiki.openmrs.org/" class="a2">OpenMRS Wiki</a> Documentation and project resources.</h5>
+         <h5 class="collect_text new_bu"><a href="http://events.openmrs.org/" class="a2">OpenMRS Events</a> Keep up with community meetings.</h5>
+         <h5 class="collect_text new_bu"><a href="http://answers.openmrs.org/" class="a2">OpenMRS Answers</a> Ask questions. Get answers.</h5>
+         <h5 class="collect_text new_bu"><a href="http://source.openmrs.org/" class="a2">OpenMRS Code</a> View and browse OpenMRS and Module source code.</h5>
+         <h5 class="collect_text new_bu"><a href="http://modules.openmrs.org/" class="a2">OpenMRS Module Repository</a> Download new OpenMRS modules.</h5>
+         <h5 class="collect_text new_bu"><a href="http://tickets.openmrs.org/" class="a2">OpenMRS Issue Tracking</a> Community support and ticketing system.</h5>
+         <h5 class="collect_text new_bu"><a href="http://ci.openmrs.org/" class="a2">OpenMRS Continuous Integration</a> Automated unit testing and deployment.</h5>
+      	</div>
+
+      <div class="right_text"><h1 class="collect_text">Recent Blog Posts</h1><br>
+
+      			<a href="https://openmrs.org/2019/11/creating-space-for-easier-collaboration-on-data-migration/"><h3 class="blog_head collect_text">Creating Space for Easier Collaboration on Data Migration</a><h4 class="collect_text blog_date">November 15th, 2019</h4></h3>
+
+      			<a href="https://openmrs.org/2019/10/welcome-christine-gichuki-openmrs-quality-assurance-technical-project-manager/"><h3 class="blog_head collect_text">Welcome, Christine Gichuki, OpenMRS Quality Assurance/Technical Project Manager</a><h4 class="collect_text blog_date">October 31st, 2019</h4></h3>
+
+      			<a href="https://openmrs.org/2019/09/openmrs-is-seeking-a-web-designer-developer/"><h3 class="blog_head collect_text">OpenMRS is seeking a web designer/developer!</a><h4 class="collect_text blog_date">September 27th, 2019</h4></h3>
+
+      			<a href="https://openmrs.org/2019/06/moving-towards-an-amazing-future-for-openmrs/"><h3 class="blog_head collect_text">Moving Towards an Amazing Future for OpenMRS</a><h4 class="collect_text blog_date">June 17th, 2019</h4></h3>
+
+      			<a href="https://openmrs.org/2019/06/solving-the-sync-challenge-openmrs-sync-2-0/"><h3 class="blog_head collect_text">Solving the Sync Challenge: OpenMRS Sync 2.0</a><h4 class="collect_text blog_date">June 4th, 2019</h4></h3>
+
+      </div></div>
+
+      <div class="final">
+      	 <center><h3 class="collect_text foot_text1">Created by darshvatsa</h3><h5 class="collect_text foot_text2">Copyright &copy; 2004-2016 OpenMRS Inc. By using this site, you agree to the <a href="https://openmrs.org/privacy" class="foot_link">OpenMRS Privacy Policy.</a>
+Text is available under the <a href="https://creativecommons.org/licenses/by/4.0/" class="foot_link">Creative Commons 4.0 International Attribution License (CC BY 4.0).</a>
+Software is available under the <a href="https://openmrs.org/license" class="foot_link">Mozilla Public License 2.0 with Healthcare Disclaimer (MPL 2.0 HD).</a>
+"OpenMRS" is a registered trademark and the OpenMRS graphic logo is a trademark of OpenMRS Inc.</h5></center>
+      </div>
+
+   </body>
+</html>
